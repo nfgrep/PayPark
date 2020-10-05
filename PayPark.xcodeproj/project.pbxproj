@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4AEEAEB252289A7009A0309 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEEAEA252289A7009A0309 /* UserViewModel.swift */; };
+		B4C15CD7251942A6003F1263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CD6251942A6003F1263 /* AppDelegate.swift */; };
+		B4C15CD9251942A6003F1263 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CD8251942A6003F1263 /* SceneDelegate.swift */; };
+		B4C15CDB251942A6003F1263 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CDA251942A6003F1263 /* SignInView.swift */; };
+		B4C15CDE251942A6003F1263 /* PayPark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CDC251942A6003F1263 /* PayPark.xcdatamodeld */; };
+		B4C15CE0251942A7003F1263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C15CDF251942A7003F1263 /* Assets.xcassets */; };
+		B4C15CE3251942A7003F1263 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C15CE2251942A7003F1263 /* Preview Assets.xcassets */; };
+		B4C15CE6251942A7003F1263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C15CE4251942A7003F1263 /* LaunchScreen.storyboard */; };
+		B4C15CF025194E03003F1263 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CEF25194E03003F1263 /* SignUpView.swift */; };
+		B4C15CF425195DEA003F1263 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CF325195DEA003F1263 /* HomeView.swift */; };
+		B4C15D56251E30AA003F1263 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15D55251E30AA003F1263 /* UserSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B4AEEAEA252289A7009A0309 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		B4C15CD3251942A6003F1263 /* PayPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C15CD6251942A6003F1263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4C15CD8251942A6003F1263 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B4C15CDA251942A6003F1263 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B4C15CDD251942A6003F1263 /* PayPark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PayPark.xcdatamodel; sourceTree = "<group>"; };
+		B4C15CDF251942A7003F1263 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4C15CE2251942A7003F1263 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B4C15CE5251942A7003F1263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4C15CE7251942A7003F1263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C15CEF25194E03003F1263 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B4C15CF325195DEA003F1263 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B4C15D55251E30AA003F1263 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4C15CD0251942A6003F1263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4AEEAE7252287B1009A0309 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B4C15CDA251942A6003F1263 /* SignInView.swift */,
+				B4C15CEF25194E03003F1263 /* SignUpView.swift */,
+				B4C15CF325195DEA003F1263 /* HomeView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B4AEEAE8252287F7009A0309 /* view models */ = {
+			isa = PBXGroup;
+			children = (
+				B4AEEAEA252289A7009A0309 /* UserViewModel.swift */,
+			);
+			path = "view models";
+			sourceTree = "<group>";
+		};
+		B4AEEAE925228812009A0309 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B4C15CCA251942A6003F1263 = {
+			isa = PBXGroup;
+			children = (
+				B4C15CD5251942A6003F1263 /* PayPark */,
+				B4C15CD4251942A6003F1263 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4C15CD4251942A6003F1263 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4C15CD3251942A6003F1263 /* PayPark.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4C15CD5251942A6003F1263 /* PayPark */ = {
+			isa = PBXGroup;
+			children = (
+				B4AEEAE925228812009A0309 /* model */,
+				B4AEEAE8252287F7009A0309 /* view models */,
+				B4AEEAE7252287B1009A0309 /* views */,
+				B4C15D54251E308D003F1263 /* util */,
+				B4C15CD6251942A6003F1263 /* AppDelegate.swift */,
+				B4C15CD8251942A6003F1263 /* SceneDelegate.swift */,
+				B4C15CDF251942A7003F1263 /* Assets.xcassets */,
+				B4C15CE4251942A7003F1263 /* LaunchScreen.storyboard */,
+				B4C15CE7251942A7003F1263 /* Info.plist */,
+				B4C15CDC251942A6003F1263 /* PayPark.xcdatamodeld */,
+				B4C15CE1251942A7003F1263 /* Preview Content */,
+			);
+			path = PayPark;
+			sourceTree = "<group>";
+		};
+		B4C15CE1251942A7003F1263 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B4C15CE2251942A7003F1263 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4C15D54251E308D003F1263 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B4C15D55251E30AA003F1263 /* UserSettings.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4C15CD2251942A6003F1263 /* PayPark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4C15CEA251942A7003F1263 /* Build configuration list for PBXNativeTarget "PayPark" */;
+			buildPhases = (
+				B4C15CCF251942A6003F1263 /* Sources */,
+				B4C15CD0251942A6003F1263 /* Frameworks */,
+				B4C15CD1251942A6003F1263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PayPark;
+			productName = PayPark;
+			productReference = B4C15CD3251942A6003F1263 /* PayPark.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4C15CCB251942A6003F1263 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					B4C15CD2251942A6003F1263 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = B4C15CCE251942A6003F1263 /* Build configuration list for PBXProject "PayPark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4C15CCA251942A6003F1263;
+			productRefGroup = B4C15CD4251942A6003F1263 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4C15CD2251942A6003F1263 /* PayPark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4C15CD1251942A6003F1263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C15CE6251942A7003F1263 /* LaunchScreen.storyboard in Resources */,
+				B4C15CE3251942A7003F1263 /* Preview Assets.xcassets in Resources */,
+				B4C15CE0251942A7003F1263 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4C15CCF251942A6003F1263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C15CDE251942A6003F1263 /* PayPark.xcdatamodeld in Sources */,
+				B4AEEAEB252289A7009A0309 /* UserViewModel.swift in Sources */,
+				B4C15CF025194E03003F1263 /* SignUpView.swift in Sources */,
+				B4C15CD7251942A6003F1263 /* AppDelegate.swift in Sources */,
+				B4C15CF425195DEA003F1263 /* HomeView.swift in Sources */,
+				B4C15D56251E30AA003F1263 /* UserSettings.swift in Sources */,
+				B4C15CD9251942A6003F1263 /* SceneDelegate.swift in Sources */,
+				B4C15CDB251942A6003F1263 /* SignInView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B4C15CE4251942A7003F1263 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4C15CE5251942A7003F1263 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4C15CE8251942A7003F1263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4C15CE9251942A7003F1263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4C15CEB251942A7003F1263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PayPark/Preview Content\"";
+				DEVELOPMENT_TEAM = RMHN57NYZQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PayPark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.profjk.PayPark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4C15CEC251942A7003F1263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PayPark/Preview Content\"";
+				DEVELOPMENT_TEAM = RMHN57NYZQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PayPark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.profjk.PayPark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4C15CCE251942A6003F1263 /* Build configuration list for PBXProject "PayPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4C15CE8251942A7003F1263 /* Debug */,
+				B4C15CE9251942A7003F1263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4C15CEA251942A7003F1263 /* Build configuration list for PBXNativeTarget "PayPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4C15CEB251942A7003F1263 /* Debug */,
+				B4C15CEC251942A7003F1263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B4C15CDC251942A6003F1263 /* PayPark.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B4C15CDD251942A6003F1263 /* PayPark.xcdatamodel */,
+			);
+			currentVersion = B4C15CDD251942A6003F1263 /* PayPark.xcdatamodel */;
+			path = PayPark.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B4C15CCB251942A6003F1263 /* Project object */;
+}

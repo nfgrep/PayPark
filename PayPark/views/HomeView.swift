@@ -11,7 +11,7 @@ struct HomeView: View {
     @EnvironmentObject var userSettings: UserSettings
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var userViewModel: UserViewModel
-    
+    @EnvironmentObject var parkingViewModel: ParkingViewModel
     
     @State private var selection: Int? = 0
     
@@ -22,8 +22,12 @@ struct HomeView: View {
         NavigationLink(destination: NewParkingView(), tag: 2, selection: $selection){}
         
         Text("Hello, \(self.userSettings.userEmail)")
-        List{
-            
+        ZStack(alignment: .bottom){
+            List{
+                ForEach(self.parkingViewModel.parkingList, id: \.self){ (parking) in
+                    Text("\(parking.parkingDate)")
+                }
+            }
         }
         Button(action:{
             print("Add parking")
@@ -45,6 +49,8 @@ struct HomeView: View {
                         Image(systemName: "gear")
                     }
                 }
+            }.onAppear(){
+                parkingViewModel.getAllParkings()
             }
     }
     

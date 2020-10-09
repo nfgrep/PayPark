@@ -9,7 +9,7 @@ import Foundation
 import Firebase
 import FirebaseFirestoreSwift
 
-struct Parking : Codable {
+struct Parking : Codable, Hashable {
     @DocumentID var id = UUID().uuidString
     var email: String = ""
     var carPlate: String = ""

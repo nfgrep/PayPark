@@ -19,6 +19,7 @@ struct HomeView: View {
     
     var body: some View {
         NavigationLink(destination: SignInView(), tag: 1, selection: $selection){}
+        NavigationLink(destination: NewParkingView(), tag: 2, selection: $selection){}
         
         Text("Hello, \(self.userSettings.userEmail)")
         List{
@@ -26,6 +27,7 @@ struct HomeView: View {
         }
         Button(action:{
             print("Add parking")
+            self.selection = 2
         }){
             Image(systemName: "plus.circle.fill")
                 .resizable()

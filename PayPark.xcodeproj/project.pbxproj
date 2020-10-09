@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,9 @@
 		B4C15CF025194E03003F1263 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CEF25194E03003F1263 /* SignUpView.swift */; };
 		B4C15CF425195DEA003F1263 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CF325195DEA003F1263 /* HomeView.swift */; };
 		B4C15D56251E30AA003F1263 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15D55251E30AA003F1263 /* UserSettings.swift */; };
+		B5386A1B25308EF5003BAFAB /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5386A1A25308EF5003BAFAB /* Parking.swift */; };
+		B5386A1E25309111003BAFAB /* NewParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5386A1D25309111003BAFAB /* NewParkingView.swift */; };
+		B5386A212530992C003BAFAB /* ParkingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5386A202530992C003BAFAB /* ParkingViewModel.swift */; };
 		B5B2BE86252BCF60007C23B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5B2BE85252BCF60007C23B1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,9 @@
 		B4C15CEF25194E03003F1263 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B4C15CF325195DEA003F1263 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B4C15D55251E30AA003F1263 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		B5386A1A25308EF5003BAFAB /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
+		B5386A1D25309111003BAFAB /* NewParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewParkingView.swift; sourceTree = "<group>"; };
+		B5386A202530992C003BAFAB /* ParkingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingViewModel.swift; sourceTree = "<group>"; };
 		B5B2BE85252BCF60007C23B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../Users/nfg/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +74,6 @@
 				8BF5D57591B61377B64874B9 /* Pods-PayPark.debug.xcconfig */,
 				119954C4D05E30D2A1BF9098 /* Pods-PayPark.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,6 +83,7 @@
 				B4C15CDA251942A6003F1263 /* SignInView.swift */,
 				B4C15CEF25194E03003F1263 /* SignUpView.swift */,
 				B4C15CF325195DEA003F1263 /* HomeView.swift */,
+				B5386A1D25309111003BAFAB /* NewParkingView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B4AEEAEA252289A7009A0309 /* UserViewModel.swift */,
+				B5386A202530992C003BAFAB /* ParkingViewModel.swift */,
 			);
 			path = "view models";
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 		B4AEEAE925228812009A0309 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B5386A1A25308EF5003BAFAB /* Parking.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -269,6 +277,9 @@
 				B4AEEAEB252289A7009A0309 /* UserViewModel.swift in Sources */,
 				B4C15CF025194E03003F1263 /* SignUpView.swift in Sources */,
 				B4C15CD7251942A6003F1263 /* AppDelegate.swift in Sources */,
+				B5386A212530992C003BAFAB /* ParkingViewModel.swift in Sources */,
+				B5386A1E25309111003BAFAB /* NewParkingView.swift in Sources */,
+				B5386A1B25308EF5003BAFAB /* Parking.swift in Sources */,
 				B4C15CF425195DEA003F1263 /* HomeView.swift in Sources */,
 				B4C15D56251E30AA003F1263 /* UserSettings.swift in Sources */,
 				B4C15CD9251942A6003F1263 /* SceneDelegate.swift in Sources */,

@@ -8,12 +8,14 @@
 import Foundation
 import Firebase
 import SwiftUI
+import os
 
 class ParkingViewModel: ObservableObject{
     @Published var parkingList = [Parking]()
     @EnvironmentObject var userSettings: UserSettings
     
     private var db = Firestore.firestore()
+    private let COLLECTION_NAME = "Parkings"
     
     func addParking(newParking: Parking){
         do{
@@ -26,7 +28,7 @@ class ParkingViewModel: ObservableObject{
     func getAllParkings(){
         let email = UserDefaults.standard.string(forKey: "KEY_EMAIL")
         
-        db.collection("Parkings")
+        db.collection(COLLECTION_NAME)
             .whereField("email", isEqualTo: email as Any)
             .order(by: "parkingDate", descending: true)
             .addSnapshotListener({ (querySnapshot, error) in
@@ -41,7 +43,9 @@ class ParkingViewModel: ObservableObject{
                         parking = try doc.document.data(as: Parking.self)!
                         
                         if doc.type == .added{
-                            self.parkingList.append(parking)
+                            if(!self.parkingList.contains(parking)){
+                                self.parkingList.append(parking)
+                            }
                         }
                         
                         if doc.type == .modified{
@@ -50,6 +54,17 @@ class ParkingViewModel: ObservableObject{
                         
                         if doc.type == .removed{
                             //TODO: for deleted document
+                            let docID = doc.document.documentID
+                            let index = self.parkingList.firstIndex(where: {
+                                ($0.id?.elementsEqual(docID))!
+                            })
+                            if(index != nil){
+                                self.parkingList.remove(at: index!)
+                            }
+                        }
+                        
+                        self.parkingList.sort{ (currentObj, nextObj) in
+                            currentObj.parkingDate > nextObj.parkingDate
                         }
                         
                     }catch let error as NSError{
@@ -58,6 +73,37 @@ class ParkingViewModel: ObservableObject{
                     
                 }
         })
+        
         print(#function, "Parking List : ", self.parkingList)
+    }
+    
+    func deleteParking(index: Int){
+        db.collection(COLLECTION_NAME)
+            .document(self.parkingList[index].id!)
+            .delete{ (error) in
+                if let error = error {
+                    Logger().error("Error deleting document \(error.localizedDescription)")
+                } else{
+                    Logger().debug("Document successfully deleted")
+                }
+        }
+    }
+    
+    func updateParking(parking: Parking, index: Int){
+        db.collection(COLLECTION_NAME)
+            .document(self.parkingList[index].id!)
+            .updateData(["buildingCode" : parking.buildingCode,
+                         "parkingDate" : parking.parkingDate,
+                         "unitNumber" : parking.unitNumber,
+                         "carPlate" : parking.carPlate,
+                         "duration" : parking.duration,
+                         "parkingLocation" : parking.parkingLocation
+            ]){ (error) in
+                if let error = error{
+                    Logger().error("Error updating document: \(error.localizedDescription)")
+                }else{
+                    Logger().debug("Document successfully updated.")
+                }
+            }
     }
 }

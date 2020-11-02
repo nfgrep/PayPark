@@ -22,10 +22,22 @@ struct HomeView: View {
         NavigationLink(destination: NewParkingView(), tag: 2, selection: $selection){}
         
         Text("Hello, \(self.userSettings.userEmail)")
+        
         ZStack(alignment: .bottom){
             List{
                 ForEach(self.parkingViewModel.parkingList, id: \.self){ (parking) in
-                    Text("\(parking.parkingDate)")
+                    
+                    NavigationLink(destination: ParkingDetailView(parking: parking)){
+                        HStack{
+                            Text("\(Formatter().simplifiedDateFormatter(date: parking.parkingDate))")
+                            Text("\(parking.buildingCode)")
+                        }
+                    }
+                    
+                }.onDelete{ (IndexSet) in
+                    for index in IndexSet{
+                        parkingViewModel.deleteParking(index: index)
+                    }
                 }
             }
         }
@@ -50,6 +62,7 @@ struct HomeView: View {
                     }
                 }
             }.onAppear(){
+                parkingViewModel.parkingList.removeAll()
                 parkingViewModel.getAllParkings()
             }
     }

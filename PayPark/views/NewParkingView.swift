@@ -40,7 +40,14 @@ struct NewParkingView: View {
                     }).pickerStyle(SegmentedPickerStyle())
                 }
                 Section{
-                    TextField("Parking Location", text: $parkingLocation)
+                    HStack{
+                        TextField("Parking Location", text: $parkingLocation)
+                        Button(action: {
+                            self.getLocation()
+                        }){
+                            Image(systemName: "location")
+                        }
+                    }
                 }
             }//Form
             
@@ -64,6 +71,11 @@ struct NewParkingView: View {
         parkingViewModel.addParking(newParking: newParking)
         
         self.presentationMode.wrappedValue.dismiss()
+    }
+    
+    private func getLocation(){
+        print(#function, "Getting Location")
+        
     }
 }
 

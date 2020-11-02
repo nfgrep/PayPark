@@ -18,6 +18,8 @@ struct Parking : Codable, Hashable {
     var parkingDate = Date()
     var duration: Int = 0
     var parkingLocation: String = ""
+    var parkingLat: Double = 0.0
+    var parkingLong: Double = 0.0
     
     init(){}
     

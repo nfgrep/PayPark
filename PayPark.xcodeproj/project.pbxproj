@@ -19,10 +19,13 @@
 		B4C15CF025194E03003F1263 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CEF25194E03003F1263 /* SignUpView.swift */; };
 		B4C15CF425195DEA003F1263 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15CF325195DEA003F1263 /* HomeView.swift */; };
 		B4C15D56251E30AA003F1263 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C15D55251E30AA003F1263 /* UserSettings.swift */; };
+		B50223072539CC2F00574396 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50223062539CC2F00574396 /* Formatter.swift */; };
+		B502230A2539CE1D00574396 /* ParkingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50223092539CE1D00574396 /* ParkingDetailView.swift */; };
 		B5386A1B25308EF5003BAFAB /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5386A1A25308EF5003BAFAB /* Parking.swift */; };
 		B5386A1E25309111003BAFAB /* NewParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5386A1D25309111003BAFAB /* NewParkingView.swift */; };
 		B5386A212530992C003BAFAB /* ParkingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5386A202530992C003BAFAB /* ParkingViewModel.swift */; };
 		B5B2BE86252BCF60007C23B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5B2BE85252BCF60007C23B1 /* GoogleService-Info.plist */; };
+		B5DDE5142542656100A905A4 /* UpdateParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDE5132542656100A905A4 /* UpdateParkingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +45,13 @@
 		B4C15CEF25194E03003F1263 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B4C15CF325195DEA003F1263 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B4C15D55251E30AA003F1263 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		B50223062539CC2F00574396 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		B50223092539CE1D00574396 /* ParkingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailView.swift; sourceTree = "<group>"; };
 		B5386A1A25308EF5003BAFAB /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
 		B5386A1D25309111003BAFAB /* NewParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewParkingView.swift; sourceTree = "<group>"; };
 		B5386A202530992C003BAFAB /* ParkingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingViewModel.swift; sourceTree = "<group>"; };
 		B5B2BE85252BCF60007C23B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../Users/nfg/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5DDE5132542656100A905A4 /* UpdateParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateParkingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 				B4C15CEF25194E03003F1263 /* SignUpView.swift */,
 				B4C15CF325195DEA003F1263 /* HomeView.swift */,
 				B5386A1D25309111003BAFAB /* NewParkingView.swift */,
+				B50223092539CE1D00574396 /* ParkingDetailView.swift */,
+				B5DDE5132542656100A905A4 /* UpdateParkingView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				B4C15D55251E30AA003F1263 /* UserSettings.swift */,
+				B50223062539CC2F00574396 /* Formatter.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -275,13 +284,16 @@
 			files = (
 				B4C15CDE251942A6003F1263 /* PayPark.xcdatamodeld in Sources */,
 				B4AEEAEB252289A7009A0309 /* UserViewModel.swift in Sources */,
+				B5DDE5142542656100A905A4 /* UpdateParkingView.swift in Sources */,
 				B4C15CF025194E03003F1263 /* SignUpView.swift in Sources */,
 				B4C15CD7251942A6003F1263 /* AppDelegate.swift in Sources */,
 				B5386A212530992C003BAFAB /* ParkingViewModel.swift in Sources */,
 				B5386A1E25309111003BAFAB /* NewParkingView.swift in Sources */,
+				B50223072539CC2F00574396 /* Formatter.swift in Sources */,
 				B5386A1B25308EF5003BAFAB /* Parking.swift in Sources */,
 				B4C15CF425195DEA003F1263 /* HomeView.swift in Sources */,
 				B4C15D56251E30AA003F1263 /* UserSettings.swift in Sources */,
+				B502230A2539CE1D00574396 /* ParkingDetailView.swift in Sources */,
 				B4C15CD9251942A6003F1263 /* SceneDelegate.swift in Sources */,
 				B4C15CDB251942A6003F1263 /* SignInView.swift in Sources */,
 			);
